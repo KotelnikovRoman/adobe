@@ -1,10 +1,12 @@
 let gifs = [
     "imgs/gif/peski.gif",
-    "imgs/gif/osminog.gif"
+    "imgs/gif/osminog.gif",
+    "imgs/gif/pirats.gif"
 ];
 let text = [
     "вы утонули в песках",
-    "вас потопил осьминог"
+    "вас потопил осьминог",
+    "вы столкнулись с пиратами"
 ];
 
 let attempts = 0;
@@ -37,6 +39,10 @@ let id_name = name => {
     if(name == "osminog") {
         $("body").append('<img id="gifka" src="' +gifs[1]+ '" alt="peski">');
         $("body").append('<h2 id="title_alert">' +text[1]+ '</h2>');
+    }
+    if(name == "pirats") {
+        $("body").append('<img id="gifka" src="' +gifs[2]+ '" alt="pirats">');
+        $("body").append('<h2 id="title_alert">' +text[2]+ '</h2>');
     }
 };
 
